@@ -1,0 +1,10 @@
+#ifndef MEMORY_MAP_H
+#define MEMORY_MAP_H
+#define FLASH_BASE          0x00000000
+#define RAM_BASE            0x20000000
+#define BOOTLOADER_SIZE     0x00008000
+#define FIRMWARE_BASE       (FLASH_BASE + BOOTLOADER_SIZE)
+#define FIRMWARE_MAX_SIZE   0x00038000 
+#define BOOT_MAGIC_VALID    0xDEADBEEF 
+
+#endif
